@@ -1,0 +1,745 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Reenie+Beanie&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url("/PARTE2-REGISTRO/ASSETS/IMG/fundo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.container {
+    max-width: 1550px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio {
+    background-color: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.432);
+    margin: 0 auto;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50rem;
+    height: 70rem;
+    margin-top: 100px;
+    margin-bottom: 72px;
+    position: relative;
+}
+
+.logo {
+     position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo img {
+    max-width: 179px;
+    display: block;
+    /* height: auto; */
+}
+
+.welcome {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.welcome h1 {
+    font-size: 3.75rem;
+    font-weight: 600;
+    color: #1f1f1f;
+}
+
+.welcome p {
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+
+.formulario label {
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+.formulario input {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.534);
+    /* border: 2px solid red; */
+    border: none;
+    height: 4rem;
+    width: 32.4rem;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 1.1rem;
+}
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* você pode controlar todos os pares daqui */
+}
+
+.input-com-icone {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-com-icone img {
+    position: absolute;
+    right: 10px;
+    width: 24px;
+    cursor: pointer;
+}
+
+#turmaSelect {
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.527);
+    height: 1.85rem;
+    width: 20rem;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+     width: 26.81rem;
+     height: 3.50rem;
+     margin-top: 30px;
+     background-color: #5173b3;
+     color: white;
+     font-size: 1.25rem;
+     border: none;
+     border-radius: 10px;
+    transition: 0.20s ease-in-out;
+
+}
+
+button:hover {
+    background-color: #062498;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.521);
+}
+
+.ultimo {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instructions {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.instructions a {
+    text-decoration: none;
+}
+
+@media (max-width: 815px) {
+    .inicio  {
+        width: 45rem;
+        height: 63rem;
+    }
+
+    .logo img {
+        max-width: 135px;
+    }
+
+    .welcome {
+      margin-top: 8rem;
+    }
+
+    .welcome h1 {
+        font-size: 3.30rem;
+    }
+
+    .welcome p {
+        font-size: 1.45rem;
+    }
+
+    .formulario label {
+        font-size: 1rem;
+    }
+    .formulario input {
+        height: 3.85rem;
+        width: 31rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 770px) {
+    .inicio {
+        width: 40rem;
+        height: 62rem;
+        margin-top: 90px;
+    }
+
+    .logo {
+     position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+    
+    .logo img {
+        max-width: 130px;
+    }
+
+    .welcome {
+      margin-top: 6rem;
+    }
+
+    .welcome h1 {
+        font-size: 3.20rem;
+    }
+
+    .welcome p {
+        font-size: 1.35rem;
+    }
+
+    .formulario label {
+        font-size: 1rem;
+    }
+    .formulario input {
+        height: 3.70rem;
+        width: 28rem;
+        font-size: 1rem;
+    }
+
+    button {
+     width: 25rem;
+     height: 3.40rem;
+    }
+
+    
+}
+
+@media (max-width: 725px) {
+    .inicio {
+        width: 38rem;
+        height: 55rem;
+    }
+
+    .logo {
+     position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+    
+    .logo img {
+        max-width: 115px;
+    }
+
+    .welcome {
+      margin-top: 7rem;
+    }
+
+    .welcome h1 {
+        font-size: 3rem;
+    }
+
+    .welcome p {
+        font-size: 1.20rem;
+    }
+
+    .formulario label {
+        font-size: 0.90rem;
+    }
+    .formulario input {
+        height: 3.30rem;
+        width: 27rem;
+        font-size: 0.90rem;
+    }
+
+    #turmaSelect {
+        height: 1.85rem;
+        width: 16rem;
+    }
+
+    button {
+        width: 20rem;
+        height: 3.40rem;
+    }
+
+    .instructions {
+        font-size: 0.9rem;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 645px) {
+    .inicio {
+        width: 35rem;
+        height: 53rem;
+    }
+    
+    .logo img {
+        max-width: 110px;
+    }
+
+    .welcome{
+      margin-top: 6rem;
+    }
+
+    .welcome h1 {
+        font-size: 2.60rem;
+    }
+
+    .welcome p {
+        font-size: 1.05rem;
+    }
+
+    .formulario label {
+        font-size: 0.90rem;
+    }
+
+    .formulario input {
+        height: 3rem;
+        width: 23rem;
+        font-size: 0.85rem;
+    }
+
+    .input-com-icone img {
+      width: 1.30rem;
+    }
+
+    #turmaSelect {
+        height: 1.60rem;
+        width: 16rem;
+    }
+
+    button {
+        height: 3rem;
+        width: 20rem;
+    }
+
+    .instructions {
+        margin-top: 30px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .inicio {
+        width: 30rem;
+        height: 50rem;
+        padding: 2rem;
+    }
+
+    .logo img {
+        max-width: 110px;
+    }
+
+    .welcome {
+        margin-top: 6rem;
+    }
+
+    .welcome h1 {
+       font-size: 2.3rem;
+    }
+
+    .welcome p {
+        font-size: 1.1rem;
+    }
+
+    .formulario input {
+        height: 2.5rem;
+        width: 20rem;
+    }
+
+    .input-com-icone img {
+      width: 1.20rem;
+    }
+
+    #turmaSelect {
+        height: 1.60rem;
+        width: 16rem;
+    }
+
+    button {
+        height: 2.5rem;
+        width: 15rem;
+        font-size: 1.1rem;
+    }
+    .instructions {
+        font-size: 0.8rem;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 495px) {
+    .inicio {
+        width: 25rem;
+        height: 47rem;
+        padding: 2rem;
+    }
+
+    .logo img {
+        max-width: 110px;
+    }
+
+     .welcome {
+        margin-top: 6rem;
+    }
+
+    .welcome h1 {
+       font-size: 2rem;
+    }
+    .welcome p {
+        font-size: 1.1rem;
+    }
+    .formulario input {
+        height: 2.5rem;
+        width: 20rem;
+        font-size: 0.8rem;
+    }
+    #turmaSelect {
+        height: 1.5rem;
+        width: 16rem;
+        font-size: 0.75rem;
+    }
+    button {
+        width: 15rem;
+        height: 2.80rem;
+        font-size: 1.1rem;
+    }
+    .instructions {
+        font-size: 0.8rem;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 430px) {
+    .inicio {
+        width: 22rem;
+        height: 44rem;
+        padding: 2rem;
+    }
+
+    .logo {
+     position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+
+    .logo img {
+        max-width: 100px;
+    }
+
+    .welcome {
+        margin-top: 3rem;
+    }
+
+    .welcome h1 {
+       font-size: 1.65rem;
+    }
+    .welcome p {
+        font-size: 0.85rem;
+    }
+
+    .formulario label {
+      font-size: 0.75rem;
+    }
+
+    .formulario input {
+        height: 2.5rem;
+        width: 18rem;
+        font-size: 0.8rem;
+    }
+    #turmaSelect {
+        height: 1.2rem;
+        width: 14rem;
+        font-size: 0.75rem;
+    }
+    button {
+        width: 15rem;
+        height: 2.2rem;
+        font-size: 0.95rem;
+    }
+    .instructions {
+        font-size: 0.75rem;
+        margin-bottom: 1rem;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 365px) {
+    .inicio {
+        width: 20rem;
+        height: 41rem;
+        padding: 2rem;
+    }
+
+    .logo {
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+    .logo img {
+        max-width: 95px;
+    }
+
+    .welcome {
+        margin-top: 3rem;
+    }
+
+    .welcome h1 {
+       font-size: 1.45rem;
+    }
+    .welcome p {
+        font-size: 0.85rem;
+    }
+
+    .formulario label {
+      font-size: 0.75rem;
+    }
+
+    .formulario input {
+        height: 2rem;
+        width: 16rem;
+        font-size: 0.7rem;
+    }
+
+    #turmaSelect {
+        height: 1.2rem;
+        width: 14rem;
+        font-size: 0.75rem;
+    }
+
+    button {
+        width: 13rem;
+        height: 2.2rem;
+        font-size: 0.95rem;
+    }
+
+    .instructions {
+        font-size: 0.65rem;
+        margin-bottom: 1rem;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 335px) {
+    .inicio {
+        width: 18rem;
+        height: 38rem;
+        padding: 2rem;
+    }
+
+    .logo {
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .logo img {
+        max-width: 86px;
+    }
+
+    .welcome {
+        margin-top: 3rem;
+    }
+
+    .welcome h1 {
+       font-size: 1.45rem;
+    }
+
+    .welcome p {
+        font-size: 0.75rem;
+    }
+
+    .formulario label {
+      font-size: 0.73rem;
+    }
+
+    .formulario input {
+        height: 2rem;
+        width: 15rem;
+        font-size: 0.6rem;
+    }
+
+    .ultimo {
+      margin-top: 8px;
+    }
+
+    #turmaSelect {
+        height: 1.2rem;
+        width: 12rem;
+        font-size: 0.65rem;
+    }
+    button {
+        margin-top: 20px;
+        width: 12rem;
+        height: 1.9rem;
+        font-size: 0.95rem;
+    }
+    .instructions {
+        font-size: 0.55rem;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 300px) {
+    .inicio {
+        width: 16rem;
+        height: 34rem;
+        padding: 2rem;
+    }
+
+    .logo {
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .logo img {
+        max-width: 80px;
+    }
+
+    .welcome {
+        margin-top: 3rem;
+    }
+
+    .welcome h1 {
+        font-size: 1.2rem;
+    }
+
+    .welcome p {
+        font-size: 0.65rem;
+    }
+
+    .formulario label {
+        font-size: 0.6rem;
+    }
+
+    .formulario input {
+        height: 1.8rem;
+        width: 13rem;
+        font-size: 0.5rem;
+    }
+
+    .ultimo {
+        margin-top: 6px;
+    }
+
+    #turmaSelect {
+        height: 1.1rem;
+        width: 11rem;
+        font-size: 0.55rem;
+    }
+
+    button {
+        margin-top: 16px;
+        width: 11rem;
+        height: 1.7rem;
+        font-size: 0.85rem;
+    }
+
+    .instructions {
+        font-size: 0.55rem;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 170px) {
+    .inicio {
+        width: 10rem;
+        height: auto;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .logo img {
+        max-width: 50px;
+    }
+
+    .welcome {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .welcome h1 {
+        font-size: 1rem;
+    }
+
+    .welcome p {
+        font-size: 0.55rem;
+    }
+
+    .formulario {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulario label {
+        font-size: 0.5rem;
+    }
+
+    .formulario input {
+        height: 1.2rem;
+        width: 7rem;
+        font-size: 0.45rem;
+        margin-bottom: 0.3rem;
+    }
+
+    #turmaSelect {
+        height: 1rem;
+        width: 7rem;
+        font-size: 0.45rem;
+    }
+
+    button {
+        margin-top: 10px;
+        width: 7rem;
+        height: 1.4rem;
+        font-size: 0.6rem;
+    }
+
+    .instructions {
+        font-size: 0.5rem;
+        margin-top: 6px;
+        text-align: center;
+    }
+}
